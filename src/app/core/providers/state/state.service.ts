@@ -8,6 +8,7 @@ export interface AppState {
     lastCollectionSlug: string | null;
     mobileNavMenuIsOpen: boolean;
     cartDrawerOpen: boolean;
+    fullscreenPreviewOpen: number | null;
 }
 
 export const initialState: AppState = {
@@ -16,6 +17,7 @@ export const initialState: AppState = {
     lastCollectionSlug: null,
     mobileNavMenuIsOpen: false,
     cartDrawerOpen: false,
+    fullscreenPreviewOpen: null,
 };
 
 /**

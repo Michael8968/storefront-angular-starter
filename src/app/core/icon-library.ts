@@ -46,3 +46,8 @@ export function buildIconLibrary(library: FaIconLibrary) {
         faCheck,
     );
 }
+
+export const iconLibrary = {
+    // ... other icons
+    faTimes
+};

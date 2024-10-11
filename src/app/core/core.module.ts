@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { ApolloModule } from 'apollo-angular';
 
-
 import { environment } from '../../environments/environment';
 import { SharedModule } from '../shared/shared.module';
 
@@ -29,6 +28,8 @@ import { ProductSearchBarComponent } from './components/product-search-bar/produ
 import { TopReviewsComponent } from './components/top-reviews/top-reviews.component';
 import { buildIconLibrary } from './icon-library';
 import { DefaultInterceptor } from './providers/data/interceptor';
+import { VimeoPlayerComponent } from './components/vimeo-player/vimeo-player.component';
+import { VimeoFullscreenPreviewComponent } from './components/vimeo-fullscreen-preview/vimeo-fullscreen-preview.component';
 
 const CORE_COMPONENTS = [
     ProductListComponent,
@@ -47,6 +48,8 @@ const CORE_COMPONENTS = [
     ProductListControlsComponent,
     ProductSearchBarComponent,
     AssetGalleryComponent,
+    VimeoPlayerComponent,
+    VimeoFullscreenPreviewComponent,
 ];
 
 @NgModule({

@@ -1,0 +1,36 @@
+.vimeo-player-container {
+  position: relative;
+  display: inline-block;
+  #vimeo-video {
+    cursor: pointer;
+  }
+  iframe {
+    pointer-events: none;
+}
+}
+
+.mute-toggle {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
