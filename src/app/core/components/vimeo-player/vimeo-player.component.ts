@@ -55,18 +55,20 @@ export class VimeoPlayerComponent implements OnInit, OnDestroy {
       });
   }
 
-  onPlayerClick() {
+  onPlayerClick(event: MouseEvent) {
+    event.stopPropagation();
+    event.preventDefault();
     console.log('Player clicked');
     this.toggle.emit(this.videoId);
   }
 
   onPlayerKeydown(event: KeyboardEvent) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      this.onPlayerClick();
-    }
+    console.log('Player keydown', event);
   }
 
-  toggleMute() {
+  toggleMute(event: MouseEvent) {
+    event.stopPropagation();
+    event.preventDefault();
     this.isMuted = !this.isMuted;
     this.vimeoPlayer.setMuted(this.isMuted);
   }
