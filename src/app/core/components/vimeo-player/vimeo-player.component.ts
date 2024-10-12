@@ -9,7 +9,7 @@ import Player from '@vimeo/player';
 export class VimeoPlayerComponent implements OnInit, OnDestroy {
   @Input() videoId = 76979871;
   @Input() width = 300;
-  @Input() height = 170;
+  @Input() height = 300;
   @Output() toggle = new EventEmitter<number>();
 
   isMuted = true;

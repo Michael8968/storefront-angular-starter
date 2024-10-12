@@ -1,6 +1,9 @@
 .vimeo-player-container {
   position: relative;
   display: inline-block;
+  background-color: black;
+  border-radius: 8px;
+  
   #vimeo-video {
     cursor: pointer;
   }
